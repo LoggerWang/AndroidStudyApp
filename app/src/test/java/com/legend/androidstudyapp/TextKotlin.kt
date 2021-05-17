@@ -1,6 +1,7 @@
 package com.legend.androidstudyapp
 
 import com.legend.androidstudyapp.datastruct.SingleHungry
+import com.legend.androidstudyapp.datastruct.SingleHungrySafeDoubleLock
 import org.junit.Test
 
 /**
@@ -9,9 +10,12 @@ import org.junit.Test
  * @discription
  */
 class TextKotlin {
-    @Test
+   @Test
     fun testSingHungry(){
         var instance = SingleHungry.getA()
         instance.printM()
-    }
+
+       var instance1 = SingleHungrySafeDoubleLock.instance
+       instance1.printM()
+   }
 }

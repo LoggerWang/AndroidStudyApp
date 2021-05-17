@@ -42,6 +42,7 @@ class SingleHungry{
 
     fun printM(){
         Log.d(TAG,"kotlin 单例 懒汉式 线程不安全")
+        println("kotlin 单例 懒汉式 线程不安全")
     }
 }
 
@@ -67,11 +68,12 @@ class SingleHungrySafe{
 
     fun printM(){
         Log.d(TAG,"kotlin 单例 懒汉式 线程安全")
+        println("kotlin 单例 懒汉式 线程安全")
     }
 }
 
 /**
- * 懒汉式-线程安全
+ * 懒汉式-线程安全 双重锁
  */
 class SingleHungrySafeDoubleLock private constructor(){
     companion object{
@@ -81,7 +83,8 @@ class SingleHungrySafeDoubleLock private constructor(){
     }
 
     fun printM(){
-        Log.d(TAG,"kotlin 单例 懒汉式 线程安全")
+        Log.d(TAG,"kotlin 单例 懒汉式 线程安全 双重锁")
+        println("kotlin 单例 懒汉式 线程安全 双重锁")
     }
 }
 
