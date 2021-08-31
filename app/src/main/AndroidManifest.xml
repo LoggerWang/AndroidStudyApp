@@ -22,7 +22,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".customerview.CustomerViewActivity" />
+        <activity android:name=".customerview.CustomerViewActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:name=".TestLeakCanaryActivity" />
     </application>
 
 </manifest>

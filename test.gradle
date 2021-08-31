@@ -1,0 +1,5 @@
+task showProjectName{ //脚本插件
+    doLast {
+        println("$project.name")
+    }
+}

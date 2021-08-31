@@ -1,4 +1,4 @@
-package com.legend.androidstudyapp.customerview
+package com.example.widget
 
 import android.animation.Animator
 import android.animation.TypeEvaluator
@@ -12,10 +12,9 @@ import android.widget.FrameLayout
 import android.widget.LinearLayout
 import android.widget.RelativeLayout
 import android.widget.Toast
-import com.legend.androidstudyapp.R
 import kotlinx.android.synthetic.main.camera_drawerlayout_white.view.*
 import me.jessyan.autosize.utils.AutoSizeUtils
-import kotlin.math.abs
+import java.lang.Math.abs
 
 /**
  * 底部抽屉布局
@@ -45,7 +44,7 @@ class BottomDrawerLayout: FrameLayout  {
     var startY = 0f
     var moveX = 0f
     var startX = 0f
-    var maxHeightPx =AutoSizeUtils.dp2px(context, maxHeight)
+    var maxHeightPx = AutoSizeUtils.dp2px(context, maxHeight)
 
     var minHeightPx = AutoSizeUtils.dp2px(context, minHeight)
     /**配置动画时间*/

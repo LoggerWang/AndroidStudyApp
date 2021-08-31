@@ -20,5 +20,17 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, CustomerViewActivity.class));
             }
         });
+        findViewById(R.id.btCompose).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+//                startActivity(new Intent(MainActivity.this, ComposeActivity.class));
+            }
+        });
+        findViewById(R.id.btTestLeakCanary).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, TestLeakCanaryActivity.class));
+            }
+        });
     }
 }

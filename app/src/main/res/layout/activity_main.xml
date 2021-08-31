@@ -13,4 +13,15 @@
         android:layout_height="@dimen/dp50"
        android:text="自定义view"/>
 
+   <Button
+       android:id="@+id/btCompose"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+       android:text="Compose"/>
+   <Button
+       android:id="@+id/btTestLeakCanary"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+       android:text="LeakCanary"/>
+
 </LinearLayout>
