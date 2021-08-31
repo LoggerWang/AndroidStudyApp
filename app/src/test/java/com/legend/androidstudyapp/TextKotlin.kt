@@ -1,5 +1,6 @@
 package com.legend.androidstudyapp
 
+import android.util.Log
 import com.legend.androidstudyapp.datastruct.SingleHungry
 import com.legend.androidstudyapp.datastruct.SingleHungrySafeDoubleLock
 import org.junit.Test
@@ -17,5 +18,6 @@ class TextKotlin {
 
        var instance1 = SingleHungrySafeDoubleLock.instance
        instance1.printM()
+       Log.d("legend","test")
    }
 }
