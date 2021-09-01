@@ -20,5 +20,6 @@ class TextKotlin {
        var instance1 = SingleHungrySafeDoubleLock.instance
        instance1.printM()
        Log.d("legend","master test")
+       Log.d("legend","master test222")
    }
 }
