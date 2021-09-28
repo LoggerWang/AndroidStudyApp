@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.legend.androidstudyapp.customerview.CustomerViewActivity;
+import com.legend.androidstudyapp.livedata.TestLiveDataActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -30,6 +31,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(MainActivity.this, TestLeakCanaryActivity.class));
+            }
+        });
+        findViewById(R.id.btTestLivedata).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, TestLiveDataActivity.class));
             }
         });
     }

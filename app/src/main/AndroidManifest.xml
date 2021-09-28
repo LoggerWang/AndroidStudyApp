@@ -25,6 +25,7 @@
         <activity android:name=".customerview.CustomerViewActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar"/>
         <activity android:name=".TestLeakCanaryActivity" />
+        <activity android:name=".livedata.TestLiveDataActivity" />
     </application>
 
 </manifest>
