@@ -2,11 +2,13 @@ package com.legend.androidstudyapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.IntentService;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
 import com.legend.androidstudyapp.customerview.CustomerViewActivity;
+import com.legend.androidstudyapp.jetpack.TestRoomActivity;
 import com.legend.androidstudyapp.livedata.TestLiveDataActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -33,10 +35,10 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, TestLeakCanaryActivity.class));
             }
         });
-        findViewById(R.id.btTestLivedata).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.btRoom).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, TestLiveDataActivity.class));
+                startActivity(new Intent(MainActivity.this, TestRoomActivity.class));
             }
         });
     }

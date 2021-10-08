@@ -26,6 +26,7 @@
             android:theme="@style/Theme.AppCompat.NoActionBar"/>
         <activity android:name=".TestLeakCanaryActivity" />
         <activity android:name=".livedata.TestLiveDataActivity" />
+        <activity android:name=".jetpack.TestRoomActivity" />
     </application>
 
 </manifest>

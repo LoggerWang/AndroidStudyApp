@@ -8,11 +8,8 @@ import android.util.AttributeSet
 import android.util.Log
 import android.view.MotionEvent
 import android.view.View
-import android.widget.FrameLayout
-import android.widget.LinearLayout
-import android.widget.RelativeLayout
-import android.widget.Toast
-import kotlinx.android.synthetic.main.camera_drawerlayout_white.view.*
+import android.widget.*
+//import kotlinx.android.synthetic.main.camera_drawerlayout_white.view.*
 import me.jessyan.autosize.utils.AutoSizeUtils
 import java.lang.Math.abs
 
@@ -55,13 +52,13 @@ class BottomDrawerLayout: FrameLayout  {
         layoutParams.height = maxHeightPx
         layoutParams.addRule(RelativeLayout.ALIGN_PARENT_BOTTOM)
         this.layoutParams = layoutParams
-        var dp2px = AutoSizeUtils.dp2px(context, maxHeight)
+//        var dp2px = AutoSizeUtils.dp2px(context, maxHeight)
         Log.d(TAG,"onActionSlip height===init height maxHeight${this.layoutParams.height}====this.height ==${this.height})")
-        llDrawerWhite.setOnTouchListener { _, event ->
+        findViewById<LinearLayout>(R.id.llDrawerWhite).setOnTouchListener { _, event ->
             onActionSlip(event, 4)
         }
 
-        tvTest.setOnTouchListener { _, event ->
+        findViewById<TextView>(R.id.tvTest).setOnTouchListener { _, event ->
             onActionSlip(event, 6)
         }
 

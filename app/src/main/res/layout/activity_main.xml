@@ -28,5 +28,10 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/dp50"
        android:text="LiveData"/>
+   <Button
+       android:id="@+id/btRoom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+       android:text="Room"/>
 
 </LinearLayout>
