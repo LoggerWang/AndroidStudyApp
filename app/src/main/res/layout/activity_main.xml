@@ -33,5 +33,20 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/dp50"
        android:text="Room"/>
+   <Button
+       android:id="@+id/ARouter"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+       android:text="ARouter"/>
+   <Button
+       android:id="@+id/btBitmap"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+       android:text="Bitmap操作"/>
+   <Button
+       android:id="@+id/btScrollTextView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+       android:text="跑马灯"/>
 
 </LinearLayout>

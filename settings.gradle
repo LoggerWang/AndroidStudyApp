@@ -2,3 +2,4 @@ include ':app'
 rootProject.name = "AndroidStudyApp"
 include ':widget'
 include ':baselib'
+include ':common2'

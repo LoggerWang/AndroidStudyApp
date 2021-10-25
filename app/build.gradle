@@ -1,7 +1,7 @@
 plugins {
     id 'com.android.application'
+//    id 'kotlin-parcelize'
     id 'kotlin-android'
-    id 'kotlin-parcelize'
     id 'kotlin-kapt'
 }
 apply from:'../test.gradle'
@@ -18,7 +18,14 @@ android {
         versionCode 1
         versionName "1.0"
 
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+//        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+//        javaCompileOptions {
+//            annotationProcessorOptions {
+//                arguments = [ AROUTER_MODULE_NAME : project.getName() ]
+//            }
+//        }
+
     }
 
     buildTypes {
@@ -35,6 +42,15 @@ android {
     testOptions {
         unitTests.returnDefaultValues = true
     }
+
+
+
+}
+
+kapt {
+    arguments {
+        arg("AROUTER_MODULE_NAME", project.getName())
+    }
 }
 
 dependencies {
@@ -45,14 +61,24 @@ dependencies {
 //    implementation 'me.jessyan:autosize:1.1.2'
 //    testImplementation 'junit:junit:4.+'
 //    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+//    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
     implementation(project(":widget"))
+    implementation (project(":common2"))
     implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
 
     debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.7'
 
 
     implementation "androidx.room:room-runtime:$room_version"
-    kapt "androidx.room:room-compiler:$room_version"
+    annotationProcessor  "androidx.room:room-compiler:$room_version"
+
+//
+//    implementation 'com.alibaba:arouter-api:1.4.1'
+//    annotationProcessor 'com.alibaba:arouter-compiler:1.2.2'
+
+//    implementation 'com.alibaba:arouter-api:1.4.1'
+    kapt 'com.alibaba:arouter-compiler:1.5.2'
+
+//    annotationProcessor 'com.alibaba:arouter-compiler:1.5.2'
 }
