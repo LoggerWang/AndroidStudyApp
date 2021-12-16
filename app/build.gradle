@@ -67,7 +67,7 @@ dependencies {
     implementation (project(":common2"))
     implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
 
-    debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.7'
+//    debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.7'
 
 
     implementation "androidx.room:room-runtime:$room_version"
