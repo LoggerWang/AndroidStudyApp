@@ -1,63 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
+    android:orientation="vertical">
 
-   <Button
-       android:id="@+id/btCustomView"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/dp50"
-       android:text="自定义view"/>
+   <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:app="http://schemas.android.com/apk/res-auto"
+       xmlns:tools="http://schemas.android.com/tools"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       tools:context=".MainActivity">
 
-   <Button
-       android:id="@+id/btCompose"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/dp50"
-       android:text="Compose"/>
-   <Button
-       android:id="@+id/btTestLeakCanary"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/dp50"
-       android:text="LeakCanary"/>
-   <Button
-       android:id="@+id/btTestLivedata"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/dp50"
-       android:text="LiveData"/>
-   <Button
-       android:id="@+id/btRoom"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/dp50"
-       android:text="Room"/>
-   <Button
-       android:id="@+id/ARouter"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/dp50"
-       android:text="ARouter"/>
-   <Button
-       android:id="@+id/btBitmap"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/dp50"
-       android:text="Bitmap操作"/>
-   <Button
-       android:id="@+id/btScrollTextView"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/dp50"
-       android:text="跑马灯"/>
-   <Button
-       android:id="@+id/btRxjava"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/dp50"
-       android:text="Rxjava"/>
+      <Button
+          android:id="@+id/btCustomView"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/dp50"
+          android:text="自定义view"/>
 
-   <ImageView
-       android:id="@+id/ivTest"
-       android:layout_width="@dimen/dp50"
-       android:layout_height="@dimen/dp50"
-       android:src="@drawable/ic_home_light"/>
+      <Button
+          android:id="@+id/btCompose"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/dp50"
+          android:text="Compose"/>
+      <Button
+          android:id="@+id/btTestLeakCanary"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/dp50"
+          android:text="LeakCanary"/>
+      <Button
+          android:id="@+id/btTestLivedata"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/dp50"
+          android:text="LiveData"/>
+      <Button
+          android:id="@+id/btRoom"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/dp50"
+          android:text="Room"/>
+      <Button
+          android:id="@+id/ARouter"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/dp50"
+          android:text="ARouter"/>
+      <Button
+          android:id="@+id/btBitmap"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/dp50"
+          android:text="Bitmap操作"/>
+      <Button
+          android:id="@+id/btScrollTextView"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/dp50"
+          android:text="跑马灯"/>
+      <Button
+          android:id="@+id/btRxjava"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/dp50"
+          android:text="Rxjava"/>
+      <Button
+          android:id="@+id/btWorkManager"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/dp50"
+          android:text="WorkManager"/>
 
-</LinearLayout>
+      <Button
+          android:id="@+id/btWebviewComment"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/dp50"
+          android:text="WebviewComment"/>
+
+      <Button
+          android:id="@+id/btNotify"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/dp50"
+          android:text="通知"/>
+      <Button
+          android:id="@+id/btImmerse"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/dp50"
+          android:text="沉浸式"/>
+
+      <ImageView
+          android:id="@+id/ivTest"
+          android:layout_width="@dimen/dp50"
+          android:layout_height="@dimen/dp50"
+          android:src="@drawable/ic_home_light"/>
+
+   </LinearLayout>
+</ScrollView>

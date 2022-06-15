@@ -21,8 +21,11 @@ import android.widget.ImageView;
 import com.alibaba.android.arouter.launcher.ARouter;
 import com.legend.androidstudyapp.bitmap.BitmapActivity;
 import com.legend.androidstudyapp.customerview.CustomerViewActivity;
+import com.legend.androidstudyapp.immerse.ImmerseActivity;
 import com.legend.androidstudyapp.jetpack.TestRoomActivity;
+import com.legend.androidstudyapp.jetpack.workmanager.WorkManagerTestActivity;
 import com.legend.androidstudyapp.livedata.TestLiveDataActivity;
+import com.legend.androidstudyapp.notify.NotifyActivity;
 import com.legend.androidstudyapp.rxjava.RxjavaActivity;
 import com.legend.androidstudyapp.scrolltextview.ScrollTextViewActivity;
 
@@ -103,6 +106,30 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(MainActivity.this, RxjavaActivity.class));
+            }
+        });
+        findViewById(R.id.btWorkManager).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, WorkManagerTestActivity.class));
+            }
+        });
+        findViewById(R.id.btWebviewComment).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, WebViewCommentActivity.class));
+            }
+        });
+        findViewById(R.id.btNotify).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, NotifyActivity.class));
+            }
+        });
+        findViewById(R.id.btImmerse).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, ImmerseActivity.class));
             }
         });
     }
