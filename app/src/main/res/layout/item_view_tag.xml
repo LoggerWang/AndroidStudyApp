@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dp8"
+        android:layout_marginBottom="@dimen/dp12"
+        android:background="#ececec"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:paddingStart="@dimen/dp8"
+        android:paddingTop="@dimen/dp1"
+        android:paddingEnd="@dimen/dp8"
+        android:paddingBottom="@dimen/dp1"
+        android:textColor="#666666"
+        android:textSize="14sp"
+        tools:text="TAG"
+    tools:ignore="MissingDefaultResource">
+
+    </TextView>
+
+</FrameLayout>

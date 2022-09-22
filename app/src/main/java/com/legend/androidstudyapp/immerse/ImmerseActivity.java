@@ -18,6 +18,8 @@ import com.legend.androidstudyapp.R;
  *  2、根布局用<CoordinatorLayout>,  而<ConstraintLayout>、<LinearLayout>、<RelativeLayout>、<FrameLayout>都不可以
  *  3、在根布局增加属性 ：android:fitsSystemWindows="true"
  *  4、如果想让图片实现沉浸式，需要在<ImageView>标签外用<CollapsingToolbarLayout>包裹,且这两个标签都要加属性 ：android:fitsSystemWindows="true"
+ *
+ *  属性参考 https://blog.csdn.net/weixin_45882303/article/details/121155068
  * @author: wanglezhi
  * @createTime: 2022/6/15 3:39 下午
  */

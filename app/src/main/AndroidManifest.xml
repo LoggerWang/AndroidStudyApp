@@ -60,6 +60,7 @@
         <activity android:name=".notify.NotifyActivity" />
         <activity android:name=".immerse.ImmerseActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:name=".customerview.FlowLayoutActivity" />
     </application>
 
 </manifest>

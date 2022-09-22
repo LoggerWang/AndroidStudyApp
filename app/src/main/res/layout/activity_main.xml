@@ -82,6 +82,16 @@
           android:layout_width="match_parent"
           android:layout_height="@dimen/dp50"
           android:text="沉浸式"/>
+      <Button
+          android:id="@+id/btFlowLayout"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/dp50"
+          android:text="流失布局"/>
+      <Button
+          android:id="@+id/btn"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/dp50"
+          />
 
       <ImageView
           android:id="@+id/ivTest"

@@ -3,8 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="app/src/main/res/layout/activity_immerse.xml" value="0.3591485507246377" />
+        <entry key="app/src/main/res/drawable/shape_gradient_white_bottom.xml" value="0.29" />
+        <entry key="app/src/main/res/layout/activity_flow_layout.xml" value="0.33697916666666666" />
+        <entry key="app/src/main/res/layout/activity_immerse.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_livedata.xml" value="0.30416666666666664" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.3591485507246377" />
+        <entry key="app/src/main/res/layout/activity_scrolltextview.xml" value="0.2916666666666667" />
+        <entry key="app/src/main/res/layout/item_flow.xml" value="0.33697916666666666" />
+        <entry key="app/src/main/res/layout/item_smooth_scroll.xml" value="0.2916666666666667" />
+        <entry key="app/src/main/res/layout/item_view_tag.xml" value="0.2838541666666667" />
+        <entry key="app/src/main/res/layout/layout_smooth_scroll.xml" value="0.2916666666666667" />
       </map>
     </option>
   </component>

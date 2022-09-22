@@ -16,9 +16,6 @@ class CalModel:ViewModel() {
     private lateinit var liveData2: MutableLiveData<Int>
 
     fun getLiveData2(): MutableLiveData<Int>{
-        if (liveData2==null) {
-            liveData2 = MutableLiveData<Int>()
-        }
         return liveData2
     }
 

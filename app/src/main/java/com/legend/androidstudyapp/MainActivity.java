@@ -21,6 +21,7 @@ import android.widget.ImageView;
 import com.alibaba.android.arouter.launcher.ARouter;
 import com.legend.androidstudyapp.bitmap.BitmapActivity;
 import com.legend.androidstudyapp.customerview.CustomerViewActivity;
+import com.legend.androidstudyapp.customerview.FlowLayoutActivity;
 import com.legend.androidstudyapp.immerse.ImmerseActivity;
 import com.legend.androidstudyapp.jetpack.TestRoomActivity;
 import com.legend.androidstudyapp.jetpack.workmanager.WorkManagerTestActivity;
@@ -132,6 +133,21 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, ImmerseActivity.class));
             }
         });
+        findViewById(R.id.btTestLivedata).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, TestLiveDataActivity.class));
+            }
+        });
+        findViewById(R.id.btFlowLayout).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, FlowLayoutActivity.class));
+            }
+        });
+        Button button = (Button) findViewById(R.id.btn);
+        String s = "Chapter 2 \\u2014 Her child is yours?";
+        button.setText(s);
     }
 
     public Drawable tintDrawable(Drawable drawable, ColorStateList colors) {
