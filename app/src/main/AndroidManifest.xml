@@ -5,6 +5,11 @@
 
     <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.REORDER_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+<!--    忽略电池优化 https://blog.csdn.net/qq_35644925/article/details/118969312 -->
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"/>
 <!--    <uses-feature-->
 <!--        android:name="android.software.leanback"-->
 <!--        android:required="true" />-->
@@ -61,6 +66,22 @@
         <activity android:name=".immerse.ImmerseActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar"/>
         <activity android:name=".customerview.FlowLayoutActivity" />
+        <activity android:name=".audio.AudioActivity"
+            android:launchMode="singleTask"
+            android:exported="true">
+            <intent-filter>
+
+                <!--必有项-->
+                <action android:name="android.intent.action.VIEW"/>
+                <!--表示该页面可以被隐式调用，必须加上该项-->
+                <category android:name="android.intent.category.DEFAULT"/>
+                <!--表示应用可以通过浏览器的连接启动，可选-->
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <!--协议部分-->
+                <data android:host="hello.world" android:port="1024" android:path="/test" android:scheme="mytest" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

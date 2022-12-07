@@ -19,6 +19,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 
 import com.alibaba.android.arouter.launcher.ARouter;
+import com.legend.androidstudyapp.audio.AudioActivity;
 import com.legend.androidstudyapp.bitmap.BitmapActivity;
 import com.legend.androidstudyapp.customerview.CustomerViewActivity;
 import com.legend.androidstudyapp.customerview.FlowLayoutActivity;
@@ -145,9 +146,14 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, FlowLayoutActivity.class));
             }
         });
-        Button button = (Button) findViewById(R.id.btn);
-        String s = "Chapter 2 \\u2014 Her child is yours?";
-        button.setText(s);
+        Button button = (Button) findViewById(R.id.btnAudio);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, AudioActivity.class));
+            }
+        });
+
     }
 
     public Drawable tintDrawable(Drawable drawable, ColorStateList colors) {

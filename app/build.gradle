@@ -54,7 +54,7 @@ kapt {
 }
 
 dependencies {
-
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'androidx.appcompat:appcompat:1.2.0'
     implementation 'com.google.android.material:material:1.2.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
@@ -92,4 +92,8 @@ dependencies {
     annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
     //androidX 版本使用下面的依赖
     implementation 'com.github.xiaohaibin:XBanner:androidx_v1.2.6'
+
+//    implementation files('libs/TarsosDSP-Android-2.4.jar')
+//
+//    implementation 'com.github.hoary.ffmpeg:FFmpeg-android-arm:2.0.1.1'
 }
